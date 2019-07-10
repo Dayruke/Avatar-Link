@@ -1,14 +1,10 @@
 # Avatar Link | Design Document
 
-[TOC]
-
-
-
 ## Introduction
 
 The Link serves as middleware, loosely coupling application software and its embodied agent, or avatar.
 
-![Conceptual Diagram](blob/master/Images/BasicDiagram.png)
+![Conceptual Diagram](https://raw.githubusercontent.com/Dayrook/Avatar-Link/master/Documentation/Images/BasicDiagram.png)
 
 An **Avatar** is an embodied software representation. An Avatar's embodiment can be in the form of digital graphics or physical hardware. We'll refer to the software an Avatar embodies as an **App**.
 
