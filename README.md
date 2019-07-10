@@ -16,6 +16,6 @@ Rather than researching and tailoring interfaces for every Avatar, the Avatar Li
 
 ---
 
-[Documentation / Design Document](Documentation/Design.md) describes the technical approach.
+[Design Document](Documentation/Design.md) describes the technical approach.
 
-[Documentation / Letter of Intent](Documentation/Letter_of_Intent.md) provides some personal background on the project
+[A Letter of Intent](Documentation/Letter_of_Intent.md) provides some personal background on the project
