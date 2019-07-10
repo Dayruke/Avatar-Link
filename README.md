@@ -2,7 +2,7 @@
 
 Avatar Link serves as middleware, loosely coupling application software and its embodied agent, or avatar.
 
-![Conceptual Diagram](blob/master/Documentation/Images/ConceptImage.png)
+![Conceptual Diagram](https://raw.githubusercontent.com/Dayrook/Avatar-Link/master/Documentation/Images/ConceptImage.png)
 
 Artificial Intelligence (AI) and the Internet of Things (IoT) are improving our natural interactions with the world's digital layer. Virtual Assistants such as Google Assistant and Amazon Alexa exemplify the trend, especially when paired with knowledge systems like Wolfram Alpha.
 
@@ -16,6 +16,6 @@ Rather than researching and tailoring interfaces for every Avatar, the Avatar Li
 
 ---
 
-[Documentation / Design Document](/blob/master/Documentation/Design.md) describes the technical approach.
+[Documentation / Design Document](Documentation/Design.md) describes the technical approach.
 
-[Documentation / Letter of Intent](blob/master/Documentation/Letter_of_Intent.md) provides some personal background on the project
+[Documentation / Letter of Intent](Documentation/Letter_of_Intent.md) provides some personal background on the project
