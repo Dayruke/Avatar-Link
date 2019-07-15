@@ -24,7 +24,7 @@ This first phase of development will implement enough functionality that a Linke
 
 We'll develop in Python -- its ease of use and extensive libraries increase the chances of getting a project up and running quickly.
 
-Our initial focus for App interoperability with the Link are v Virtual / voice assistants such as Alexa, Google Assistant, and Mycroft.
+Our initial focus for App interoperability with the Link are Virtual / voice assistants such as Alexa, Google Assistant, and Mycroft.
 
 [Mycroft](https://mycroft.ai/) is the first App we will integrate with the Link. 
 
