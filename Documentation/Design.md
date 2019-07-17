@@ -31,12 +31,13 @@ Our initial focus for App interoperability with the Link are Virtual / voice ass
 
 ### App Channel
 
-Mycroft's [Message Bus](https://mycroft.ai/documentation/message-bus/) employs web sockets to communicate between its client and server software. The Message Bus should provide enough data to serve as the App Channel. 
+Mycroft's [Message Bus](https://mycroft.ai/documentation/message-bus/) employs web sockets to communicate between its client and server software. The Message Bus should provide enough data to serve as the App Channel.
 
-`recognizer_loop:audio_output_start` signals that the voice assistant is speaking
+The [Avatar-Link Message Bus test script](dev/ws_Mycroft-client.py) demonstrates how to receive the necessary data from the Mycroft App Channel.
 
-`recognizer_loop:record_begin` signals that the voice assistant is processing user utterances
+Within the Message Bus, a subset of traffic is meant to be received by the hardware platform hosting Mycroft, which Mycroft names the **Enclosure**. Enclosure messages include things like changing eye color and smiling.
 
+The [Enclosure API](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/enclosure/api.py) is on Mycroft's Github.
 
 ### Avatar Channel Standard
 
@@ -45,13 +46,19 @@ The Link will run a socket.io server for message passing.
 
 Using network communication for the Avatar channel allows the Link and Avatar to sit on separate machines. In a typical setup, the Link will be deployed on the user interface hardware along with the Avatar. 
 
-The following are suggestions for how the Avatar should behave upon receiving messages in the Avatar Channel.
+### Avatar-Link Message Translation
 
-`speech:begin_speaking` Begin talking animation
+The role of Avatar-Link is to parse out relevant messages from the App Channel, such as Mycroft's 
 
-`speech:end_speaking` End talking animation
+`enclosure.mouth.events.activate`
 
-`mood:listening` Animate to show attentive listening
+and then send the appropriate message into the Avatar Channel, such as
+
+`speak_begin` 
+
+to signal the Avatar should being a talking animation.
+
+[Avatar-Link_Mycroft_Messages.md](Documentation/Avatar-Link_Mycroft_Messages.md) contains a table of every message in the Mycroft App Channel along with their Avatar Channel equivalent (where applicable).
 
 
 ## Looking Forward
