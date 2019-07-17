@@ -2,13 +2,13 @@
 
 This table shows Mycroft's messages to the hardware enclosure indicating which should be used by Avatar-Link.
 
-✔ Will be integrated into Avatar-Link
+✔	Will be integrated into Avatar-Link
 
-? May be integrated into Avatar-Link at some point
+?	May be integrated into Avatar-Link at some point
 
 | Use  | Mycroft msg                       | Avatar-Link msg | Description                        |
 | ---- | --------------------------------- | --------------- | ---------------------------------- |
-| ✔    | enclosure.reset                   | reset           | Restore Restarted / Neutral State  |
+| ✔    | enclosure.reset                   | reset           | Restore Default States             |
 |      | enclosure.system.mute             |                 | mute speaker                       |
 |      | enclosure.system.unmute           |                 | unmute speaker                     |
 |      | enclosure.system.blink            |                 | blink a number of times            |
@@ -33,9 +33,8 @@ This table shows Mycroft's messages to the hardware enclosure indicating which s
 | ?    | enclosure.mouth.text              | text            | show text                          |
 |      | enclosure.mouth.display           |                 | show image from text string        |
 | ?    | enclosure.mouth.display_image     | image           | show image from PNG                |
-| ?    | enclosure.weather.display         |                 | show weather info                  |
+| ?    | enclosure.weather.display         | weather         | show weather info                  |
 | ✔    | enclosure.mouth.events.activate   | speak_begin     | enable mouth movement with speech  |
 | ✔    | enclosure.mouth.events.deactivate | speak_end       | disable mouth movement with speech |
 
-Table contains all Mycroft Messages emmited through the [Enclosure API](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/enclosure/api.py). 
-As of 2019-07-17
+Table contains all Mycroft Messages emitted through the [Enclosure API](https://github.com/MycroftAI/mycroft-core/blob/dev/mycroft/enclosure/api.py) as of 2019-07-17
