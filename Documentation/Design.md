@@ -33,7 +33,7 @@ Our initial focus for App interoperability with the Link are Virtual / voice ass
 
 Mycroft's [Message Bus](https://mycroft.ai/documentation/message-bus/) employs web sockets to communicate between its client and server software. The Message Bus should provide enough data to serve as the App Channel.
 
-The [Avatar-Link Message Bus test script](dev/ws_Mycroft-client.py) demonstrates how to receive the necessary data from the Mycroft App Channel.
+The [Avatar-Link Message Bus test script](../dev/ws_Mycroft-client.py) demonstrates how to receive the necessary data from the Mycroft App Channel.
 
 Within the Message Bus, a subset of traffic is meant to be received by the hardware platform hosting Mycroft, which Mycroft names the **Enclosure**. Enclosure messages include things like changing eye color and smiling.
 
@@ -58,7 +58,7 @@ and then send the appropriate message into the Avatar Channel, such as
 
 to signal the Avatar should being a talking animation.
 
-[Avatar-Link_Mycroft_Messages.md](Documentation/Avatar-Link_Mycroft_Messages.md) contains a table of every message in the Mycroft App Channel along with their Avatar Channel equivalent (where applicable).
+[Avatar-Link_Mycroft_Messages.md](Avatar-Link_Mycroft_Messages.md) contains a table of every message in the Mycroft App Channel along with their Avatar Channel equivalent (where applicable).
 
 
 ## Looking Forward
