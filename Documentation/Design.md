@@ -56,7 +56,7 @@ and then send the appropriate message into the Avatar Channel, such as
 
 `speak_begin` 
 
-to signal the Avatar should being a talking animation.
+to signal the Avatar should play a talking animation.
 
 [Avatar-Link_Mycroft_Messages.md](Avatar-Link_Mycroft_Messages.md) contains a table of every message in the Mycroft App Channel along with their Avatar Channel equivalent (where applicable).
 
