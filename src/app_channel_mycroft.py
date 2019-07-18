@@ -7,13 +7,10 @@ import websockets
 import mycroft_map
 
 '''
-    IP = "10.0.0.17"
-    uri = f"ws://{IP}:8181/core"
-    async with websockets.connect(uri) as websocket:
-        while True:
-            message = await websocket.recv()
-            print(f"||| I heard {message}")
-            '''
+1 Monitors Mycroft App Channel
+2 Translates Messages for Avatar Channel
+3 Forwards Translated Message to Server for Broadcast
+'''
 
 async def ProcessMycroftMB():
     
@@ -69,39 +66,3 @@ finally:
     loop.close()
 
 
-
-'''
-
-# WS client example
-
-import asyncio
-import websockets
-
-async def hello():
-    uri = "ws://10.0.0.17:8181/core"
-    async with websockets.connect(uri) as websocket:
-        #MyType = input("What's your name? ")
-        #MyData = input("data")
-
-    # '{"name": "value"}' 
-    #MyType = 'speak'
-    #MyData = '{"utterance": "Yo dude"}' 
-        
-    #message = '{"type": "' + MyType + '", "data": ' + MyData +'}'  
-
-        
-        # say somethign to mycroft
-        command = "what time is it"
-        message = "{\"data\": {\"utterances\": [\""+command+"\"]}, \"type\": \"recognizer_loop:utterance\", \"context\": null}"
-        # message = 'enclosure.eyes.narrow'
-
-        await websocket.send(message)
-        print(f"> {message}")
-
-        MycroftResponse = await websocket.recv()
-        print(f"< {MycroftResponse}")
-
-
-asyncio.get_event_loop().run_until_complete(hello())
-
-'''

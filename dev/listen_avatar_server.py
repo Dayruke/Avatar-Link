@@ -2,9 +2,12 @@
 
 # WS client example
 
-
 import asyncio
 import websockets
+
+'''
+Echos the Avatar Server
+'''
 
 async def HeyListen():
     # uri = "ws://localhost:8765" # ws_server.py
@@ -14,8 +17,8 @@ async def HeyListen():
             print(f"||| I am Listening")
           #  await websocket.send('Listeno ')
             
-            greeting = await websocket.recv()
-            print(f"||| I heard {greeting}")
+            broadcastMsg = await websocket.recv()
+            print(f"||| I heard {broadcastMsg}")
 
 
 # asyncio.get_event_loop().run_until_complete(HeyListen())
@@ -23,19 +26,3 @@ asyncio.ensure_future(HeyListen())
 asyncio.get_event_loop().run_forever()
 
 
-'''
-
-async def hello(websocket, path):
-    name = await websocket.recv() 
-    print(f"< {name}")
-
-    greeting = f"Hello {name}!"
-
-    await websocket.send(greeting)
-    print(f"> {greeting}")
-
-start_server = websockets.serve(hello, "localhost", 8765)
-
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().run_forever()
-'''

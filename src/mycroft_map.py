@@ -3,8 +3,8 @@
 # WS client example
 '''
 Mycroft Map
-Receives messages as they appear on Mycroft's Message Bus and
-Returns Message for use on the Avatar Channel
+Receives string as it appears on Mycroft's Message Bus and
+Returns string for use on the Avatar Channel
 '''
 
 import re

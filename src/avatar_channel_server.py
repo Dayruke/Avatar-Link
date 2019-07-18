@@ -1,15 +1,20 @@
 #!/usr/bin/env python
 
-# WS client example
+# avatar_channel_server
+
 
 import asyncio
 import websockets
+
+'''
+Receives translated messages ready for Avatar Channel
+and broadcasts message to all clients
+'''
 
 connectedClients = set()
 
 async def broadcast(websocket, msg):
    
-    # await websocket.send(msg) #old
 
     # send message to all connected clients
     if connectedClients:  # asyncio.wait doesn't accept an empty list
