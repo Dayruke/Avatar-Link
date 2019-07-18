@@ -16,6 +16,10 @@ Rather than researching and tailoring interfaces for every Avatar, the Avatar Li
 
 ---
 
+[src/](src) has program files - working as of 2019-07-18
+
+[dev/](dev) has test tools
+
 [Design Document](Documentation/Design.md) describes the technical approach.
 
 [A Letter of Intent](Documentation/Letter_of_Intent.md) provides some personal background on the project
